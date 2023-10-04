@@ -18,7 +18,7 @@ PatientRouter.post("/register", registerPatient);
 PatientRouter.post("/login", loginPatient);
 
 // Get a patient by ID
-PatientRouter.get("/:patientId", Auth, PatientAuth, getPatientById);
+PatientRouter.get("/:patientId", Auth, getPatientById);
 
 // Update a patient by ID
 PatientRouter.patch("/:patientId",Auth,PatientAuth, updatePatientById);
